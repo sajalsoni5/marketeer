@@ -1,0 +1,14 @@
+{
+  "name": "marketeer",
+  "version": "1.0.0",
+  "description": "All your needs in one place",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sajal soni",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
