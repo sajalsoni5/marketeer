@@ -1,0 +1,6 @@
+{
+    "name":"DEfault server",
+    "port":"3000",
+    "private":"",
+    "db":"mongodb://localhost/Marketeer"
+}

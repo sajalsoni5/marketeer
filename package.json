@@ -9,6 +9,15 @@
   "author": "sajal soni",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "bcrypt": "^5.0.1",
+    "config": "^3.3.6",
+    "express": "^4.17.2",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.4",
+    "morgan": "^1.10.0",
+    "winston": "^2.4.0"
   }
 }
