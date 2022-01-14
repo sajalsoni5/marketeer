@@ -13,7 +13,6 @@ router.get('/',(req,res)=>{
 
 router.post('/',async(req,res)=>{
     const {error} = validate(req.body);
-    throw new Error('could not login');
     if(error)
     {
         res.status(401).send(`Please check email or password ${error}`); 
