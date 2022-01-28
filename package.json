@@ -4,7 +4,11 @@
   "description": "All your needs in one place",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --maxWorkers=1"
+    "test": "jest --watchAll --maxWorkers=1",
+    "start": "node index.js"
+  },
+  "engines":{
+    "node":"14.17.3"
   },
   "author": "sajal soni",
   "license": "ISC",
