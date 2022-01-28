@@ -21,7 +21,7 @@ router.post('/',async(req,res)=>{
     {
         console.log(typeof found);
         console.log(JSON.stringify(found));
-        return res.status(404).send(`${found}, User already exists`);
+        return res.status(404).send(`${req.body.email}, User already exists`);
     }
     const salt = await bcrypt.genSalt(10);
     
@@ -31,7 +31,7 @@ router.post('/',async(req,res)=>{
     let result = await user.save();
     const token = user.generateAuth();
     
-    res.header('x-auth-token',token).status(200).send(result);
+    res.header('x-auth-token',token).status(200).send(_.pick(result,['name','email','age','isAdmin']));
     
 })
 

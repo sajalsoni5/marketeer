@@ -4,6 +4,6 @@ const mongoose = require('mongoose');
 module.exports = function () {
     mongoose.connect(config.get('db'))
         .then(() =>{ 
-            winston.info('connneted to database');
+            winston.info(`connneted to database ${config.get('db')}`);
     });
 }

@@ -3,9 +3,7 @@ const {Book,bookValidator} = require('../models/book');
 const express = require('express');
 const _ = require('lodash');
 const router = express.Router();
-const joi = require('joi');
-const {isValidObjectId, mongoose } = require('mongoose');
-const ObjectId= require('mongoose').Types.ObjectId;
+const {isValidObjectId} = require('mongoose');
 
 
 router.get('/',(req,res)=>{

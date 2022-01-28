@@ -4,6 +4,9 @@ const register = require('../routes/register.js');
 const bookStore = require('../routes/bookstore');
 const fashionstore = require('../routes/fashionstore');
 const Electronic = require('../routes/electronicstore');
+const rr = require('../routes/returns');
+const rentalStore = require('../routes/rentstore');
+const movieStore = require('../routes/moviestore');
 const error = require('../Middleware/error.js');
 const express = require('express');
 
@@ -19,6 +22,9 @@ module.exports = function (app) {
     app.use('/api/bookStore', bookStore);
     app.use('/api/fashion', fashionstore);
     app.use('/api/Electrics', Electronic);
+    app.use('/api/rentalstore', rentalStore);
+    app.use('/api/moviestore', movieStore);
+    app.use('/api/returns', rr);
 
     app.use(error);
 
